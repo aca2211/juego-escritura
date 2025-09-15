@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.juegoescritura.controller.GameController"
+            prefWidth="600" prefHeight="300">
+
+    <children>
+        <VBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label fx:id="lblLevel" text="Nivel: 1" styleClass="big-label"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="lblTimer" text="Tiempo: 20s" styleClass="big-label"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Puntuación:"/>
+                <Label fx:id="lblScore" text="0" styleClass="big-label"/>
+                <Region HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <Label text="Escribe exactamente la palabra que se muestra:"/>
+            <Label fx:id="lblWord" text="Palabra aparecera aqui" styleClass="word-label" wrapText="true"/>
+
+            <HBox spacing="10">
+                <TextField fx:id="txtInput" promptText="Escribe aquí..." HBox.hgrow="ALWAYS"/>
+                <Button fx:id="btnValidate" text="Validar"/>
+                <Button fx:id="btnRestart" text="Reiniciar"/>
+            </HBox>
+
+
+            <ProgressBar fx:id="progressBar" prefWidth="580" progress="1.0"/>
+
+            <Label fx:id="lblFeedback" text="" styleClass="feedback-label"/>
+        </VBox>
+    </children>
+</AnchorPane>

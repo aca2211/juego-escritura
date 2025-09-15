@@ -1,0 +1,18 @@
+.big-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.word-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-color: #f0f8ff;
+    -fx-padding: 8px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+}
+
+.feedback-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2a7f2a;
+}
